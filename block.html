@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Drow | Сервис</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/favicon/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="styles/block.css">
+	<script src="scripts/block.js" defer></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__row df">
+				<div class="header__column df">
+					<div class="header__logo selectNaN df">
+						<a class="link" href="index.html"></a>
+						<div class="logo-name">drow</div>
+						<div class="logo">
+							<img src="images/logo/logo_white.svg" alt="logo">
+						</div>
+					</div>
+				</div>
+				<div class="header__column menu df">
+					<a class="menu__link button" href="service.html">
+						<span>Изменить Объект</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="window">
+		<div class="window__row df">
+			<div class="window__column df window__column_01">
+				<div class="window__window">
+					<div class="window__example example"></div>
+					<div class="fixed-guide">
+						<div class="fixed-guide__lay df"></div>
+						<div class="fixed-guide__img-block"></div>
+						<a class="link _blank" href="images/guide/guide_triangle.jpg"></a>
+					</div>
+					<div class="copied">Copied Successfully</div>
+				</div>
+			</div>
+			<div class="window__column df window__column_02">
+				<div class="window__logo">
+					<img class="selectNaN" src="images/logo/logo_white.svg" alt="logo">
+				</div>
+				<div class="window__change-block df">
+					<div class="change">
+						<div class="change__title-block df">
+							<div class="change__title-img"></div>
+							<h2 class="change__title">Блок</h2>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Ширина</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in1" min="0" max="300">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Высота</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in2" min="0" max="300">
+							</div>
+						</div>
+
+						<div class="change__row-double change-row">
+							<div class="change-row__name change-row__name-title section-title">Скругление</div>
+
+							<div class="change__row change-row">
+								<div class="change-row__name">Сверху-Слева</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in3" min="0" max="60">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Сверху-Справа</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in4" min="0" max="60">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Снизу-Справа</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in5" min="0" max="60">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Снизу-Слева</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in6" min="0" max="60">
+								</div>
+							</div>
+
+							<div class="change__row change-row">
+								<div class="change-row__input-block">
+									<label class="circle df" for="circle">
+										<input type="checkbox" id="circle">
+										<span class="circle__fake"></span>
+										<span class="circle__name change-row__name">Сделать окружность</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="change__row-double change-row">
+							<div class="change-row__name change-row__name-title section-title">Тень</div>
+							<div class="change__row">
+								<div class="change-row__name">Сдвижение по оси X</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in7" min="0" max="80">
+								</div>
+							</div>
+							<div class="change__row">
+								<div class="change-row__name">Сдвижение по оси Y</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in8" min="0" max="80">
+								</div>
+							</div>
+							<div class="change__row">
+								<div class="change-row__name">Размытие тени</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in9" min="0" max="100">
+								</div>
+							</div>
+							<div class="change__row">
+								<div class="change-row__name">Увеличение размера тени</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in10" min="0" max="80">
+								</div>
+							</div>
+							<div class="change__row df change__row_color">
+								<div class="change-row__name">Цвет тени</div>
+								<div class="change-row__input-block">
+									<input type="color" class="change-row__input change-row__in_color in11">
+								</div>
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Параллелограмм в градусах</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in12" min="0" max="120">
+							</div>
+						</div>
+					</div>
+					<div class="change__row out">
+						<div class="out__title section-title">Вывод:</div>
+						<div class="out__window">
+							<div class="out__copy copy df">
+								<img class="selectNaN" src="images/icons/copy.svg" alt="copy">
+							</div>
+							<div class="out__row"><span class="out__style-name">width</span>: <span class="out__style-value"><span class="val1"></span>px</span>;</div>
+							<div class="out__row"><span class="out__style-name">height</span>: <span class="out__style-value"><span class="val2"></span>px</span>;</div>
+
+							<div class="out__row"><span class="out__style-name">border-radius</span>: <span class="out__style-value"><span class="val3"></span>px <span class="val4"></span>px <span class="val5"></span>px <span class="val6"></span>px</span>;</div>
+
+							<div class="out__row"><span class="out__style-name">box-shadow</span>: <span class="out__style-value"><span class="val7"></span>px <span class="val8"></span>px <span class="val9"></span>px <span class="val10"></span>px <span class="val11"></span></span>;</div>
+
+							<div class="out__row"><span class="out__style-name">transform</span>: <span class="out__style-value">skew(<span class="val12"></span>deg)</span>;</div>
+						</div>
+					</div>
+					<div class="help">
+						<button class="help__btn button help-button"><span>Помощь</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

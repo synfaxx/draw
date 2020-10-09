@@ -1,150 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<title>Drow | Сервис</title>
+	<title>Drow | Выберите сервис</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="images/favicon/favicon.png" type="image/png">
 	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="styles/service.css">
-	<script src="scripts/service.js" defer></script>
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header__row df">
-				<div class="header__column df">
-					<div class="header__logo df">
-						<a class="link" href="index.html"></a>
-						<div class="logo-name">drow</div>
-						<div class="logo">
-							<img src="images/logo/logo_white.svg" alt="logo">
+	<section class="section df">
+		<div class="section__logo logo df">
+			<a class="link" href="index.html"></a>
+			<div class="logo-name">Drow</div>
+			<div class="logo-img">
+				<img src="images/logo/logo_white.svg" alt="logo">
+			</div>
+		</div>
+		<div class="container df">
+			<div class="section__title">
+				<h1>Выберите тип объекта</h1>
+			</div>
+			<div class="section__row df">
+				<div class="section__column df">
+					<div class="section__item item df">
+						<a class="link" href="triangle.html"></a>
+						<div class="item__image-block df">
+							<div class="item__triangle"></div>
 						</div>
+						<div class="item__title">Треугольник</div>
 					</div>
 				</div>
-				<button class="header__column burger">
-					<span></span>
-				</button>
-				<div class="header__column menu df">
-					<div class="header__types df">
-						<div class="header__type type triangle df active">
-							<div class="type__triangle type__example type__example_bdc"></div>
-							<div class="type__name selectNaN">Треугольник</div>
+				<div class="section__column df">
+					<div class="section__item item df">
+						<a class="link" href="block.html"></a>
+						<div class="item__image-block df">
+							<div class="item__block"></div>
 						</div>
-						<div class="header__type type box df">
-							<div class="type__box type__example type__example_bgc"></div>
-							<div class="type__name selectNaN">Блок</div>
+						<div class="item__title">Блок</div>
+					</div>
+				</div>
+				<div class="section__column df">
+					<div class="section__item item df">
+						<a class="link" href="text.html"></a>
+						<div class="item__image-block df">
+							<div class="item__text">Т</div>
 						</div>
-						<div class="header__type type text df">
-							<div class="type__text type__example type__example_c selectNaN">T</div>
-							<div class="type__name selectNaN">Текст</div>
-						</div>
-						<div class="header__type df">
-							<div class="type__text type__example selectNaN">?</div>
-							<div class="type__name selectNaN">Скоро!</div>
-						</div>
+						<div class="item__title">Треугольник</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
-	<div class="panel df none">
-		<div class="panel__column df">
-		</div>
-	</div>
-	<div class="window">
-		<div class="window__row df">
-			<div class="window__column df window__column_01">
-				<div class="window__window">
-					<div class="window__example example"></div>
-					<div class="fixed-guide">
-						<a class="_blank fixed-guide__link" href="images/guide/guide_triangle.jpg"></a>
-					</div>
-					<div class="copied">Copied Successfully</div>
-				</div>
-			</div>
-			<div class="window__column df  window__column_02">
-				<div class="window__logo">
-					<img class="selectNaN" src="images/logo/logo_white.svg" alt="logo">
-				</div>
-				<div class="window__change-block df">
-					<div class="window__change change">
-						<div class="window__change-title df">
-							<div class="window__change-title-example"></div>
-							Треугольник
-						</div>
-						<div class="change__row">
-							<div class="change__name">Ширина Слева</div>
-							<div class="change__input-block">
-								<input class="change__input change_1" type="range" min="0" max="250">
-							</div>
-						</div>
-						<div class="change__row">
-							<div class="change__name">Ширина Справа</div>
-							<div class="change__input-block">
-								<input class="change__input change_2" type="range" min="0" max="250">
-							</div>
-						</div>
-						<div class="change__row">
-							<div class="change__name">Высота</div>
-							<div class="change__input-block">
-								<input class="change__input change_0" type="range" min="0" max="500">
-							</div>
-						</div>
-						<div class="change__row side-row">
-							<div class="side-row__name">Направление треугольника</div>
-							<div class="side-row__row df">
-								<div class="side-row__input-block">
-									<label class="label-for-radio df" for="top">
-										<input class="radio radio_0" type="radio" name="side" id="top" checked>
-										<span class="fake-radio"></span>
-										Вверх
-									</label>
-								</div>
-								<div class="side-row__input-block">
-									<label class="label-for-radio df" for="right">
-										<input class="radio radio_1" type="radio" name="side" id="right">
-										<span class="fake-radio"></span>
-										Вправо
-									</label>
-								</div>
-								<div class="side-row__input-block">
-									<label class="label-for-radio df" for="bottom">
-										<input class="radio radio_2" type="radio" name="side" id="bottom">
-										<span class="fake-radio"></span>
-										Вниз
-									</label>
-								</div>
-								<div class="side-row__input-block">
-									<label class="label-for-radio df" for="left">
-										<input class="radio radio_3" type="radio" name="side" id="left">
-										<span class="fake-radio"></span>
-										Влево
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="output">
-							<div class="output__area">
-								<div class="output__text">
-									<div class="output__value"><span class="output__style-name">border-<span class="style_01">left</span></span><span class="output__style-symbol">: </span><span class="output__style-value"><span class="left"></span>px solid <span class="side-right">transparent</span></span><span class="output__style-symbol">;</span></div>
-
-									<div class="output__value"><span class="output__style-name">border-<span class="style_02">right</span></span><span class="output__style-symbol">:</span> <span class="output__style-value"><span class="right"></span>px solid <span class="side-right">transparent</span></span><span class="output__style-symbol">;</span></div>
-
-									<div class="output__value"><span class="output__style-name">border-<span class="style_03">bottom</span></span><span class="output__style-symbol">:</span> <span class="output__style-value"><span class="height"></span>px solid <span class="side-height">#00af77</span></span><span class="output__style-symbol">;</span></div>
-								</div>
-								<div class="output__copy df">
-									<img src="images/icons/copy.svg" alt="copy">
-								</div>
-							</div>
-						</div>
-						<div class="help">
-							<button class="help__button guide-help">Помощь</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	</section>
 </body>
 </html>
