@@ -34,11 +34,17 @@
 		<div class="window__row df">
 			<div class="window__column df window__column_01">
 				<div class="window__window">
+					<div class="window__change-bg">
+						<label class="change__row_color df" for="window-bgc">
+							<span>Изменить цвет фона</span>
+							<input type="color" class="in14" id="window-bgc">
+						</label>
+					</div>
 					<div class="window__example example"></div>
 					<div class="fixed-guide">
 						<div class="fixed-guide__lay df"></div>
 						<div class="fixed-guide__img-block"></div>
-						<a class="link _blank" href="images/guide/guide_triangle.jpg"></a>
+						<a class="link _blank" href="images/guide/guide_block.jpg"></a>
 					</div>
 					<div class="copied">Copied Successfully</div>
 				</div>
@@ -67,55 +73,55 @@
 						</div>
 
 						<div class="change__row-double change-row">
-							<div class="change-row__name change-row__name-title section-title">Скругление</div>
+							<div class="change-row__name change-row__name-title section-title change-row__clear-row df">
+								<span>Скругление</span>
+								<div class="clear clear-radius">
+									<img src="images/icons/trash.svg" alt="trash">
+								</div>
+							</div>
 
 							<div class="change__row change-row">
 								<div class="change-row__name">Сверху-Слева</div>
 								<div class="change-row__input-block">
-									<input type="range" class="change-row__input in3" min="0" max="60">
+									<input type="range" class="change-row__input in3" min="0" max="100">
 								</div>
 							</div>
 							<div class="change__row change-row">
 								<div class="change-row__name">Сверху-Справа</div>
 								<div class="change-row__input-block">
-									<input type="range" class="change-row__input in4" min="0" max="60">
+									<input type="range" class="change-row__input in4" min="0" max="100">
 								</div>
 							</div>
 							<div class="change__row change-row">
 								<div class="change-row__name">Снизу-Справа</div>
 								<div class="change-row__input-block">
-									<input type="range" class="change-row__input in5" min="0" max="60">
+									<input type="range" class="change-row__input in5" min="0" max="100">
 								</div>
 							</div>
 							<div class="change__row change-row">
 								<div class="change-row__name">Снизу-Слева</div>
 								<div class="change-row__input-block">
-									<input type="range" class="change-row__input in6" min="0" max="60">
-								</div>
-							</div>
-
-							<div class="change__row change-row">
-								<div class="change-row__input-block">
-									<label class="circle df" for="circle">
-										<input type="checkbox" id="circle">
-										<span class="circle__fake"></span>
-										<span class="circle__name change-row__name">Сделать окружность</span>
-									</label>
+									<input type="range" class="change-row__input in6" min="0" max="100">
 								</div>
 							</div>
 						</div>
 						<div class="change__row-double change-row">
-							<div class="change-row__name change-row__name-title section-title">Тень</div>
+							<div class="change-row__name change-row__name-title section-title change-row__clear-row df">
+								<span>Тень</span>
+								<div class="clear clear-shadow">
+									<img src="images/icons/trash.svg" alt="trash">
+								</div>
+							</div>
 							<div class="change__row">
 								<div class="change-row__name">Сдвижение по оси X</div>
-								<div class="change-row__input-block">
-									<input type="range" class="change-row__input in7" min="0" max="80">
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in7" min="-80" max="80">
 								</div>
 							</div>
 							<div class="change__row">
 								<div class="change-row__name">Сдвижение по оси Y</div>
-								<div class="change-row__input-block">
-									<input type="range" class="change-row__input in8" min="0" max="80">
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in8" min="-80" max="80">
 								</div>
 							</div>
 							<div class="change__row">
@@ -125,9 +131,9 @@
 								</div>
 							</div>
 							<div class="change__row">
-								<div class="change-row__name">Увеличение размера тени</div>
-								<div class="change-row__input-block">
-									<input type="range" class="change-row__input in10" min="0" max="80">
+								<div class="change-row__name">Изменение размера тени</div>
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in10" min="-80" max="80">
 								</div>
 							</div>
 							<div class="change__row df change__row_color">
@@ -139,8 +145,14 @@
 						</div>
 						<div class="change__row change-row">
 							<div class="change-row__name">Параллелограмм в градусах</div>
+							<div class="change-row__input-block change-row__input-block_center">
+								<input type="range" class="change-row__input in12" min="-40" max="40">
+							</div>
+						</div>
+						<div class="change__row change-row df change__row_color">
+							<div class="change-row__name">Цвет блока</div>
 							<div class="change-row__input-block">
-								<input type="range" class="change-row__input in12" min="0" max="120">
+								<input type="color" class="change-row__input change-row__in_color in13">
 							</div>
 						</div>
 					</div>
@@ -156,8 +168,12 @@
 							<div class="out__row"><span class="out__style-name">border-radius</span>: <span class="out__style-value"><span class="val3"></span>px <span class="val4"></span>px <span class="val5"></span>px <span class="val6"></span>px</span>;</div>
 
 							<div class="out__row"><span class="out__style-name">box-shadow</span>: <span class="out__style-value"><span class="val7"></span>px <span class="val8"></span>px <span class="val9"></span>px <span class="val10"></span>px <span class="val11"></span></span>;</div>
+							
+							<div class="out__row"><span class="out__style-name">background-color</span>: <span class="out__style-value"><span class="bgc-example"></span></span>;</div>
 
 							<div class="out__row"><span class="out__style-name">transform</span>: <span class="out__style-value">skew(<span class="val12"></span>deg)</span>;</div>
+
+							<div class="out__row"><span class="out__style-name">background-color</span>: <span class="out__style-value"><span class="val13"></span></span>;</div>
 						</div>
 					</div>
 					<div class="help">
