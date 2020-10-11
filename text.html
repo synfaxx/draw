@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Drow | Сервис</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/favicon/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="styles/text.css">
+	<script src="scripts/text.js" defer></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__row df">
+				<div class="header__column df">
+					<div class="header__logo selectNaN df">
+						<a class="link" href="index.html"></a>
+						<div class="logo-name">drow</div>
+						<div class="logo">
+							<img src="images/logo/logo_white.svg" alt="logo">
+						</div>
+					</div>
+				</div>
+				<div class="header__column menu df">
+					<a class="menu__link button" href="service.html">
+						<span>Изменить Объект</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="window">
+		<div class="window__row df">
+			<div class="window__column df window__column_01">
+				<div class="window__window">
+					<div class="window__change-bg df">
+						<label class="change__row_color df" for="window-bgc">
+							<span>Изменить цвет фона</span>
+							<input type="color" class="in9" id="window-bgc">
+						</label>
+						<div class="clear clear-bgc">
+							<img src="images/icons/trash.svg" alt="trash">
+						</div>
+					</div>
+					<div class="window__example example">Text</div>
+					<div class="fixed-guide">
+						<div class="fixed-guide__lay df"></div>
+						<div class="fixed-guide__img-block"></div>
+						<a class="link _blank" href="images/guide/guide_text.jpg"></a>
+					</div>
+					<div class="copied">Copied Successfully</div>
+				</div>
+			</div>
+			<div class="window__column df window__column_02">
+				<div class="window__logo">
+					<img class="selectNaN" src="images/logo/logo_white.svg" alt="logo">
+				</div>
+				<div class="window__change-block df">
+					<div class="change">
+						<div class="change__title-block df">
+							<div class="change__title-img"></div>
+							<h2 class="change__title">Текст</h2>
+						</div>
+
+						<div class="change__row change-row">
+							<div class="change-row__name">Размер шрифта</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in1" min="6" max="172">
+							</div>
+						</div>
+						<div class="change__row change-row df change__row_color">
+							<div class="change-row__name">Цвет шрифта</div>
+							<div class="change-row__input-block">
+								<input type="color" class="change-row__input change-row__in_color in2">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Толщина шрифта</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in3" min="1" max="9">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Форма текста</div>
+							<div class="change-row__input-block forms-text-row df">
+								<div class="forms-text-row__column">
+									<div class="forms-text-row__item normal-style">Обычный</div>
+								</div>
+								<div class="forms-text-row__column">
+									<div class="forms-text-row__item italic-style">Курсив</div>
+								</div>
+								<div class="forms-text-row__column">
+									<div class="forms-text-row__item oblique-style">Наклонённый</div>
+								</div>
+							</div>
+							<div class="change-row__input-block forms-text-info">
+								<span>Подробности можно найти <a class="_blank" href="http://htmlbook.ru/css/font-style">здесь</a></span>
+							</div>
+						</div>
+						
+						<div class="change__row-double change-row">
+							<div class="change-row__name change-row__name-title section-title change-row__clear-row df">
+								<span>Тень</span>
+								<div class="clear clear-shadow">
+									<img src="images/icons/trash.svg" alt="trash">
+								</div>
+							</div>
+
+							<div class="change__row change-row">
+								<div class="change-row__name">Сдвиг по оси X</div>
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in5" min="-80" max="80">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Сдвиг по оси Y</div>
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in6" min="-80" max="80">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Размытие тени</div>
+								<div class="change-row__input-block">
+									<input type="range" class="change-row__input in7" min="0" max="100">
+								</div>
+							</div>
+							<div class="change__row change-row df change__row_color">
+								<div class="change-row__name">Цвет тени</div>
+								<div class="change-row__input-block">
+									<input type="color" class="change-row__input change-row__in_color in8">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="change__row out">
+						<div class="out__title section-title">Вывод:</div>
+						<div class="out__window">
+							<div class="out__copy copy df">
+								<img class="selectNaN" src="images/icons/copy.svg" alt="copy">
+							</div>
+							<div class="out__row"><span class="out__style-name">font-size</span>: <span class="out__style-value"><span class="val1"></span>px</span>;</div>
+
+							<div class="out__row"><span class="out__style-name">color</span>: <span class="out__style-value"><span class="val2"></span></span>;</div>
+
+							<div class="out__row"><span class="out__style-name">font-weight</span>: <span class="out__style-value"><span class="val3"></span></span>;</div>
+
+							<div class="out__row"><span class="out__style-name">font-style</span>: <span class="out__style-value"><span class="val4"></span></span>;</div>
+							
+							<div class="out__row"><span class="out__style-name">text-shadow</span>: <span class="out__style-value"><span class="val5"></span>px <span class="val6"></span>px <span class="val7"></span>px <span class="val8"></span></span>;</div>
+						</div>
+					</div>
+					<div class="help">
+						<button class="help__btn button help-button"><span>Помощь</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
