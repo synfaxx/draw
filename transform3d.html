@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Draw | Сервис</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/favicon/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="styles/trf3d.css">
+	<script src="scripts/trf3d.js" defer></script>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<div class="header__row df">
+				<div class="header__column df">
+					<div class="header__logo selectNaN df">
+						<a class="link" href="index.html"></a>
+						<div class="logo-name">draw</div>
+						<div class="logo">
+							<img src="images/logo/logo_white.svg" alt="logo">
+						</div>
+					</div>
+				</div>
+				<div class="header__column menu df">
+					<a class="menu__link button" href="service.html">
+						<span>Изменить Объект</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="window">
+		<div class="window__row df">
+			<div class="window__column df window__column_01">
+				<div class="window__window">
+					<div class="window__example-parent example-parent">
+						<div class="window__example example">
+							<div class="example__front df">
+								<div class="example__logo df">
+									<div class="logo-name logo-name_example">Draw</div>
+									<div class="logo">
+										<img src="images/logo/logo_white.svg" alt="logo">
+									</div>
+								</div>
+								<div class="logo-subtitle">Нарисуй Свой Сайт!</div>
+							</div>
+						</div>
+					</div>
+					<div class="fixed-guide">
+						<div class="fixed-guide__lay df"></div>
+						<div class="fixed-guide__img-block"></div>
+						<a class="link _blank" href="images/guide/guide_3d.jpg"></a>
+					</div>
+					<div class="copied">Copied Successfully</div>
+				</div>
+			</div>
+			<div class="window__column df window__column_02">
+				<div class="window__logo">
+					<img class="selectNaN" src="images/logo/logo_white.svg" alt="logo">
+				</div>
+				<div class="window__change-block df">
+					<div class="change">
+						<div class="change__title-block df">
+							<div class="change__title-img">
+								<div class="change__title-img-item"></div>
+							</div>
+							<h2 class="change__title">3D-Объект</h2>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Класс родителя</div>
+							<div class="change-row__input-block change-row__input-block_text">
+								<input type="text" class="change-row__input change-row__input-text in1">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Класс элемента</div>
+							<div class="change-row__input-block change-row__input-block_text">
+								<input type="text" class="change-row__input change-row__input-text in2">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Ширина Объекта</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in3" min="5" max="300">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Высота Объекта</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in4" min="5" max="300">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Глубина объема по оси Z (perspective)</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in5" min="250" max="700">
+							</div>
+							<div class="change-row__input-block forms-text-info">
+								<span>Подробности можно найти <a class="_blank" href="https://webref.ru/css/perspective">здесь</a></span>
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Позиция точки отчета для вращений на элементе</div>
+							<div class="change-row__input-block">
+								<div class="perspective">
+									<div class="perspective__row df">
+										<div class="perspective__column">
+											<button class="perspective__btn tl"></button>
+										</div>
+										<div class="perspective__column">
+											<button class="perspective__btn tc"></button>
+										</div>
+										<div class="perspective__column">
+											<button class="perspective__btn tr"></button>
+										</div>
+									</div>
+									<div class="perspective__row df">
+										<div class="perspective__column">
+											<button class="perspective__btn cl"></button>
+										</div>
+										<div class="perspective__column">
+											<button class="perspective__btn cc"></button>
+										</div>
+										<div class="perspective__column">
+											<button class="perspective__btn cr"></button>
+										</div>
+									</div>
+									<div class="perspective__row df">
+										<div class="perspective__column">
+											<button class="perspective__btn bl"></button>
+										</div>
+										<div class="perspective__column">
+											<button class="perspective__btn bc"></button>
+										</div>
+										<div class="perspective__column">
+											<button class="perspective__btn br"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="change-row__input-block forms-text-info">
+								<span>Подробности можно найти <a class="_blank" href="https://webref.ru/css/perspective-origin">здесь</a></span>
+							</div>
+						</div>
+
+						<div class="change__row-double change-row">
+							<div class="change-row__name change-row__name-title section-title change-row__clear-row df">
+								<span>Вращение</span>
+								<div class="clear clear-rotate">
+									<img src="images/icons/trash.svg" alt="trash">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Вращение вдоль оси X в пространстве</div>
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in6" min="0" max="180">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Вращение вдоль оси Y в пространстве</div>
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in7" min="0" max="180">
+								</div>
+							</div>
+							<div class="change__row change-row">
+								<div class="change-row__name">Вращение вдоль оси Z в пространстве</div>
+								<div class="change-row__input-block change-row__input-block_center">
+									<input type="range" class="change-row__input in8" min="-180" max="180">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="change__row out">
+						<div class="out__title section-title">Вывод:</div>
+						<div class="out__window">
+							<div class="out__copy copy df">
+								<img class="selectNaN" src="images/icons/copy.svg" alt="copy">
+							</div>
+							<div class="out__row"><span class="out__class">.<span class="val1"></span></span> {</div>
+
+							<div class="out__row out__tab"><span class="out__style-name">transform-style</span>: <span class="out__style-value">preserve-3d</span>;</div>
+
+							<div class="out__row out__tab"><span class="out__style-name">perspective</span>: <span class="out__style-value"><span class="val5"></span>px</span>;</div>
+							<div class="out__row out__tab"><span class="out__style-name">perspective-origin</span>: <span class="out__style-value"><span class="val9"></span></span>;</div>
+							<div class="out__row">}</div><br>
+							
+							<div class="out__row"><span class="out__class">.<span class="val2"></span></span> {</div>
+							<div class="out__row out__tab"><span class="out__style-name">width</span>: <span class="out__style-value"><span class="val3"></span>px</span>;</div>
+
+							<div class="out__row out__tab"><span class="out__style-name">height</span>: <span class="out__style-value"><span class="val4"></span>px</span>;</div>
+
+							<div class="out__row out__tab"><span class="out__style-name">background-color</span>: <span class="out__style-value">#00af77</span>;</div>
+
+							<div class="out__row out__tab"><span class="out__style-name">transform</span>: <span class="out__style-value">rotateX(<span class="val6"></span>deg) rotateY(<span class="val7"></span>deg) rotateZ(<span class="val8"></span>deg)</span>;</div>
+							<div class="out__row">}</div>
+						</div>
+					</div>
+					<div class="help">
+						<button class="help__btn button help-button"><span>Помощь</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
