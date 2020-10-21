@@ -121,7 +121,7 @@
 											<button class="perspective__btn cl"></button>
 										</div>
 										<div class="perspective__column">
-											<button class="perspective__btn cc"></button>
+											<button class="perspective__btn perspective__btn_main cc"></button>
 										</div>
 										<div class="perspective__column">
 											<button class="perspective__btn cr"></button>
@@ -155,19 +155,19 @@
 							<div class="change__row change-row">
 								<div class="change-row__name">Вращение вдоль оси X в пространстве</div>
 								<div class="change-row__input-block change-row__input-block_center">
-									<input type="range" class="change-row__input in6" min="0" max="180">
+									<input class="change-row__input change-row__input_range in6" type="range" min="-180" max="180">
 								</div>
 							</div>
 							<div class="change__row change-row">
 								<div class="change-row__name">Вращение вдоль оси Y в пространстве</div>
 								<div class="change-row__input-block change-row__input-block_center">
-									<input type="range" class="change-row__input in7" min="0" max="180">
+									<input class="change-row__input change-row__input_range in7" type="range" min="-180" max="180">
 								</div>
 							</div>
 							<div class="change__row change-row">
 								<div class="change-row__name">Вращение вдоль оси Z в пространстве</div>
 								<div class="change-row__input-block change-row__input-block_center">
-									<input type="range" class="change-row__input in8" min="-180" max="180">
+									<input class="change-row__input change-row__input_range in8" type="range" min="-180" max="180">
 								</div>
 							</div>
 						</div>
@@ -204,6 +204,9 @@
 			</div>
 		</div>
 	</div>
-
+	<div class="alert-info df">
+		<div class="alert-info__img"></div>
+		<div class="alert-info__text"></div>
+	</div>
 </body>
 </html>
