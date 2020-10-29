@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Draw | Сервис</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/favicon/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="styles/filter.css">
+	<script src="scripts/filter.js" defer></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__row df">
+				<div class="header__column df">
+					<div class="header__logo selectNaN df">
+						<a class="link" href="index.html"></a>
+						<div class="logo-name">draw</div>
+						<div class="logo">
+							<img src="images/logo/logo_white.svg" alt="logo">
+						</div>
+					</div>
+				</div>
+				<div class="header__column menu df">
+					<a class="menu__link button" href="service.html">
+						<span>Изменить Объект</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="window">
+		<div class="window__row df">
+			<div class="window__column df window__column_01">
+				<div class="window__window">
+					<div class="window__file file-box">
+						<label class="file-box__fake" for="file-in">Выберите Файл</label>
+						<input class="file-box__in" type="file" id="file-in" accept="image/x-png,image/jpeg">
+					</div>
+					<div class="window__example example bgi"></div>
+					<!-- <div class="fixed-guide">
+						<div class="fixed-guide__lay df"></div>
+						<div class="fixed-guide__img-block"></div>
+						<a class="link _blank" href="images/guide/guide_block.jpg"></a>
+					</div> -->
+					<div class="copied">Скопированно</div>
+				</div>
+			</div>
+			<div class="window__column df window__column_02">
+				<div class="window__logo">
+					<img class="selectNaN" src="images/logo/logo_white.svg" alt="logo">
+				</div>
+				<div class="window__change-block df">
+					<div class="change">
+						<div class="change__title-block df">
+							<div class="change__title-img"></div>
+							<h2 class="change__title">Оттенки и Фильтры</h2>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Яркость 1</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in1" min="0" max="300">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Размытие 2</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in2" min="0" max="50">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Контраст 3</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in3" min="0" max="200">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Сероватость 4</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in4" min="0" max="100">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Оттенок цветов 5</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in5" min="0" max="360">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Негатив 6</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in6" min="0" max="100">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Насыщенность 7</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in7" min="100" max="200">
+							</div>
+						</div>
+						<div class="change__row change-row">
+							<div class="change-row__name">Сепия 8</div>
+							<div class="change-row__input-block">
+								<input type="range" class="change-row__input in8" min="0" max="100">
+							</div>
+						</div>
+
+						<div class="change__row-double change-row">
+							<!-- <div class="change-row__name change-row__name-title section-title change-row__clear-row df">
+								<span>Подобранные фильтры</span>
+								<div class="clear clear-filter">
+									<img src="images/icons/trash.svg" alt="trash">
+								</div>
+							</div> -->
+
+							<div class="filters">
+								<div class="filters__row df">
+									<div class="filters__column df">
+										<button class="filters__item filter filter-1 bgi" data-fil="brightness(140%) saturate(100%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-2 bgi" data-fil="saturate(160%) contrast(110%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-3 bgi" data-fil="contrast(120%) invert(5%) saturate(165%) sepia(20%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-4 bgi" data-fil="contrast(110%) hue-rotate(12deg) saturate(165%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-5 bgi" data-fil="brightness(110%) contrast(110%) hue-rotate(340deg) saturate(175%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-6 bgi" data-fil="contrast(140%) invert(20%) saturate(150%) sepia(18%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-7 bgi" data-fil="hue-rotate(30deg) grayscale(30%) invert(8%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-8 bgi" data-fil="brightness(140%) contrast(150%) invert(18%) saturate(190%) sepia(25%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-9 bgi" data-fil="grayscale(100%) contrast(110%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-10 bgi" data-fil="brightness(120%) grayscale(100%) invert(12%) saturate(100%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-11 bgi" data-fil="brightness(125%) grayscale(80%) invert(7%) saturate(130%)"></button>
+									</div>
+									<div class="filters__column df">
+										<button class="filters__item filter filter-12 bgi" data-fil="brightness(80%) contrast(80%) grayscale(100%) invert(100%)"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="change__row out">
+						<div class="out__title section-title">Вывод:</div>
+						<div class="out__window">
+							<div class="out__copy copy df">
+								<img class="selectNaN" src="images/icons/copy.svg" alt="copy">
+							</div>
+							<div class="out__row">
+								<span class="out__style-name">filter</span>: 
+								<span class="out__style-value"><span class="all-v1"> brightness(<span class="val1"></span>%)</span><span class="all-v2"> blur(<span class="val2"></span>px)</span><span class="all-v3"> contrast(<span class="val3"></span>%)</span><span class="all-v4"> grayscale(<span class="val4"></span>%)</span><span class="all-v5"> hue-rotate(<span class="val5"></span>deg)</span><span class="all-v6"> invert(<span class="val6"></span>%)</span><span class="all-v7"> saturate(<span class="val7"></span>%)</span><span class="all-v8"> sepia(<span class="val8"></span>%)</span></span>;
+							</div>
+						</div>
+					</div>
+					<div class="help">
+						<button class="help__btn button help-button"><span>Помощь</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="alert-info df">
+		<div class="alert-info__img"></div>
+		<div class="alert-info__text"></div>
+	</div>
+</body>
+</html>
